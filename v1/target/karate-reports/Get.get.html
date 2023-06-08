@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>Get.get</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2023-04-10 11:28:59 PM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:11]"><span>[1:11]</span> <span>Get all articles are created</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">Get/get.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">get Research Article</span>
+          <span class="feature-description">As a user I want to consult the Research articles
+  to see how many research articles are created</span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:11]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">GetArticlesCreated</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:11]</span>
+                <span class="scenario-name">Get all articles are created</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1765</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:11]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:11]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url url</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8">23:28:57.254 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;search&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param q = &#39;title:DNA&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1659</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.15">23:28:57.740 request:
+1 &gt; GET http://api.plos.org/search?q=title%3ADNA
+1 &gt; Host: api.plos.org
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_302)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+23:28:58.052 request:
+2 &gt; GET http://api.plos.org/search?q=title%3ADNA
+2 &gt; Host: api.plos.org
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_302)
+2 &gt; Accept-Encoding: gzip,deflate
+
+
+23:28:58.919 response time in milliseconds: 858
+2 &lt; 200
+2 &lt; Date: Tue, 11 Apr 2023 04:28:59 GMT
+2 &lt; Content-Type: application/json;charset=utf-8
+2 &lt; Content-Length: 22082
+2 &lt; Connection: keep-alive
+2 &lt; Last-Modified: Mon, 10 Apr 2023 23:01:09 GMT
+2 &lt; ETag: &quot;NDY5ZTgwMDAwMDAwMDAwMFNvbHI=&quot;
+2 &lt; Strict-Transport-Security: max-age=15724800; includeSubDomains
+2 &lt; Access-Control-Allow-Origin: *
+2 &lt; Access-Control-Allow-Credentials: true
+2 &lt; Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+2 &lt; Access-Control-Allow-Headers: DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization
+2 &lt; Access-Control-Max-Age: 1728000
+2 &lt; X-Cache-Status: MISS
+{
+  &quot;response&quot;:{&quot;numFound&quot;:5725,&quot;start&quot;:0,&quot;maxScore&quot;:6.739384,&quot;docs&quot;:[
+      {
+        &quot;id&quot;:&quot;10.1371/journal.pone.0000290&quot;,
+        &quot;journal&quot;:&quot;PLoS ONE&quot;,
+        &quot;eissn&quot;:&quot;1932-6203&quot;,
+        &quot;publication_date&quot;:&quot;2007-03-14T00:00:00Z&quot;,
+        &quot;article_type&quot;:&quot;Research Article&quot;,
+        &quot;author_display&quot;:[&quot;Rayna I. Kraeva&quot;,
+          &quot;Dragomir B. Krastev&quot;,
+          &quot;Assen Roguev&quot;,
+          &quot;Anna Ivanova&quot;,
+          &quot;Marina N. Nedelcheva-Veleva&quot;,
+          &quot;Stoyno S. Stoynov&quot;],
+        &quot;abstract&quot;:[&quot;Nucleic acids, due to their structural and chemical properties, can form double-stranded secondary structures that assist the transfer of genetic information and can modulate gene expression. However, the nucleotide sequence alone is insufficient in explaining phenomena like intron-exon recognition during RNA processing. This raises the question whether nucleic acids are endowed with other attributes that can contribute to their biological functions. In this work, we present a calculation of thermodynamic stability of DNA/DNA and mRNA/DNA duplexes across the genomes of four species in the genus Saccharomyces by nearest-neighbor method. The results show that coding regions are more thermodynamically stable than introns, 3′-untranslated regions and intergenic sequences. Furthermore, open reading frames have more stable sense mRNA/DNA duplexes than the potential antisense duplexes, a property that can aid gene discovery. The lower stability of the DNA/DNA and mRNA/DNA duplexes of 3′-untranslated regions and the higher stability of genes correlates with increased mRNA level. These results suggest that the thermodynamic stability of DNA/DNA and mRNA/DNA duplexes affects mRNA transcription.&quot;],
+        &quot;title_display&quot;:&quot;Stability of mRNA/DNA and DNA/DNA Duplexes Affects mRNA Transcription&quot;,
+        &quot;score&quot;:6.739384},
+      {
+        &quot;id&quot;:&quot;10.1371/journal.pgen.1010545&quot;,
+        &quot;journal&quot;:&quot;PLOS Genetics&quot;,
+        &quot;eissn&quot;:&quot;1553-7404&quot;,
+        &quot;publication_date&quot;:&quot;2022-12-13T00:00:00Z&quot;,
+        &quot;article_type&quot;:&quot;Research Article&quot;,
+        &quot;author_display&quot;:[&quot;Yen-Chih Ho&quot;,
+          &quot;Chen-Syun Ku&quot;,
+          &quot;Siang-Sheng Tsai&quot;,
+          &quot;Jia-Lin Shiu&quot;,
+          &quot;Yi-Zhen Jiang&quot;,
+          &quot;Hui Emmanuela Miriam&quot;,
+          &quot;Han-Wen Zhang&quot;,
+          &quot;Yen-Tzu Chen&quot;,
+          &quot;Wen-Tai Chiu&quot;,
+          &quot;Song-Bin Chang&quot;,
+          &quot;Che-Hung Shen&quot;,
+          &quot;Kyungjae Myung&quot;,
+          &quot;Peter Chi&quot;,
+          &quot;Hungjiun Liaw&quot;],
+        &quot;abstract&quot;:[&quot;\nReplication fork reversal which restrains DNA replication progression is an important protective mechanism in response to replication stress. PARP1 is recruited to stalled forks to restrain DNA replication. However, PARP1 has no helicase activity, and the mechanism through which PARP1 participates in DNA replication restraint remains unclear. Here, we found novel protein-protein interactions between PARP1 and DNA translocases, including HLTF, SHPRH, ZRANB3, and SMARCAL1, with HLTF showing the strongest interaction among these DNA translocases. Although HLTF and SHPRH share structural and functional similarity, it remains unclear whether SHPRH contains DNA translocase activity. We further identified the ability of SHPRH to restrain DNA replication upon replication stress, indicating that SHPRH itself could be a DNA translocase or a helper to facilitate DNA translocation. Although hydroxyurea (HU) and MMS induce different types of replication stress, they both induce common DNA replication restraint mechanisms independent of intra-S phase activation. Our results suggest that the PARP1 facilitates DNA translocase recruitment to damaged forks, preventing fork collapse and facilitating DNA repair.\nAuthor summary: Replication stress induces genomic instability and is associated with cancer development. PARP1 is not only involved in base-excision repair (BER), but also restrains replication fork progression upon replication stress. However, PARP1 has no helicase activities, and the mechanism through which PARP1 participates in the formation of reversed replication forks remains unclear. In the present study, we identified novel protein-protein interactions between PARP1 and DNA translocases, including HLTF, SHPRH, ZRANB3, and SMARCAL1, with HLTF showing the strongest interaction among these DNA translocases. This finding is particularly important because PARP1 inhibitors are effective against homologous recombination deficient cancers. Our study reveals an additional function of PARP1, which restrains replication progression through interaction with DNA translocases and provides an important protective mechanism in response to replication stress. &quot;],
+        &quot;title_display&quot;:&quot;PARP1 recruits DNA translocases to restrain DNA replication and facilitate DNA repair&quot;,
+        &quot;score&quot;:6.612277},
+      {
+        &quot;id&quot;:&quot;10.1371/journal.pone.0154785&quot;,
+        &quot;journal&quot;:&quot;PLOS ONE&quot;,
+        &quot;eissn&quot;:&quot;1932-6203&quot;,
+        &quot;publication_date&quot;:&quot;2016-05-04T00:00:00Z&quot;,
+        &quot;article_type&quot;:&quot;Research Article&quot;,
+        &quot;author_display&quot;:[&quot;Choon Seok Oh&quot;,
+          &quot;Jean Sippy&quot;,
+          &quot;Bridget Charbonneau&quot;,
+          &quot;Jennifer Crow Hutchinson&quot;,
+          &quot;Olga Esther Mejia-Romero&quot;,
+          &quot;Michael Barton&quot;,
+          &quot;Priyal Patel&quot;,
+          &quot;Rachel Sippy&quot;,
+          &quot;Michael Feiss&quot;],
+        &quot;abstract&quot;:[&quot;\nDuring progeny assembly, viruses selectively package virion genomes from a nucleic acid pool that includes host nucleic acids. For large dsDNA viruses, including tailed bacteriophages and herpesviruses, immature viral DNA is recognized and translocated into a preformed icosahedral shell, the prohead. Recognition involves specific interactions between the viral packaging enzyme, terminase, and viral DNA recognition sites. Generally, viral DNA is recognized by terminase’s small subunit (TerS). The large terminase subunit (TerL) contains translocation ATPase and endonuclease domains. In phage lambda, TerS binds a sequence repeated three times in cosB, the recognition site. TerS binding to cosB positions TerL to cut the concatemeric DNA at the adjacent nicking site, cosN. TerL introduces staggered nicks in cosN, generating twelve bp cohesive ends. Terminase separates the cohesive ends and remains bound to the cosB-containing end, in a nucleoprotein structure called Complex I. Complex I docks on the prohead’s portal vertex and translocation ensues. DNA topology plays a role in the TerSλ-cosBλ interaction. Here we show that a site, I2, located between cosN and cosB, is critically important for an early DNA packaging step. I2 contains a complex static bend. I2 mutations block DNA packaging. I2 mutant DNA is cut by terminase at cosN in vitro, but in vivo, no cos cleavage is detected, nor is there evidence for Complex I. Models for what packaging step might be blocked by I2 mutations are presented.\n&quot;],
+        &quot;title_display&quot;:&quot;DNA Topology and the Initiation of Virus DNA Packaging&quot;,
+        &quot;score&quot;:6.4952245},
+      {
+        &quot;id&quot;:&quot;10.1371/journal.pone.0047101&quot;,
+        &quot;journal&quot;:&quot;PLoS ONE&quot;,
+        &quot;eissn&quot;:&quot;1932-6203&quot;,
+        &quot;publication_date&quot;:&quot;2012-11-08T00:00:00Z&quot;,
+        &quot;article_type&quot;:&quot;Research Article&quot;,
+        &quot;author_display&quot;:[&quot;Sheng-Yu Wang&quot;,
+          &quot;Yueh-Luen Lee&quot;,
+          &quot;Yi-Hua Lai&quot;,
+          &quot;Jeremy J. W. Chen&quot;,
+          &quot;Wen-Lin Wu&quot;,
+          &quot;Jeu-Ming P. Yuann&quot;,
+          &quot;Wang-Lin Su&quot;,
+          &quot;Show-Mei Chuang&quot;,
+          &quot;Ming-Hon Hou&quot;],
+        &quot;abstract&quot;:[&quot;\n        The anticancer activity of DNA intercalators is related to their ability to intercalate into the DNA duplex with high affinity, thereby interfering with DNA replication and transcription. Polyamines (spermine in particular) are almost exclusively bound to nucleic acids and are involved in many cellular processes that require nucleic acids. Until now, the effects of polyamines on DNA intercalator activities have remained unclear because intercalation is the most important mechanism employed by DNA-binding drugs. Herein, using actinomycin D (ACTD) as a model, we have attempted to elucidate the effects of spermine on the action of ACTD, including its DNA-binding ability, RNA and DNA polymerase interference, and its role in the transcription and replication inhibition of ACTD within cells. We found that spermine interfered with the binding and stabilization of ACTD to DNA. The presence of increasing concentrations of spermine enhanced the transcriptional and replication activities of RNA and DNA polymerases, respectively, in vitro treated with ActD. Moreover, a decrease in intracellular polyamine concentrations stimulated by methylglyoxal-bis(guanylhydrazone) (MGBG) enhanced the ACTD-induced inhibition of c-myc transcription and DNA replication in several cancer cell lines. The results indicated that spermine attenuates ACTD binding to DNA and its inhibition of transcription and DNA replication both in vitro and within cells. Finally, a synergistic antiproliferative effect of MGBG and ACTD was observed in a cell viability assay. Our findings will be of significant relevance to future developments in combination with cancer therapy by enhancing the anticancer activity of DNA interactors through polyamine depletion.\n      &quot;],
+        &quot;title_display&quot;:&quot;Spermine Attenuates the Action of the DNA Intercalator, Actinomycin D, on DNA Binding and the Inhibition of Transcription and DNA Replication&quot;,
+        &quot;score&quot;:6.371923},
+      {
+        &quot;id&quot;:&quot;10.1371/journal.pbio.0020173&quot;,
+        &quot;journal&quot;:&quot;PLoS Biology&quot;,
+        &quot;eissn&quot;:&quot;1545-7885&quot;,
+        &quot;publication_date&quot;:&quot;2004-06-22T00:00:00Z&quot;,
+        &quot;article_type&quot;:&quot;Research Article&quot;,
+        &quot;author_display&quot;:[&quot;David R Halpin&quot;,
+          &quot;Pehr B Harbury&quot;],
+        &quot;abstract&quot;:[&quot;\n        Recently reported technologies for DNA-directed organic synthesis and for DNA computing rely on routing DNA populations through complex networks. The reduction of these ideas to practice has been limited by a lack of practical experimental tools. Here we describe a modular design for DNA routing genes, and routing machinery made from oligonucleotides and commercially available chromatography resins. The routing machinery partitions nanomole quantities of DNA into physically distinct subpools based on sequence. Partitioning steps can be iterated indefinitely, with worst-case yields of 85% per step. These techniques facilitate DNA-programmed chemical synthesis, and thus enable a materials biology that could revolutionize drug discovery.\n      \n        Resin-linked oligonucleotides are described that efficiently partition subpools of DNA based on sequence, enabling DNA- programmed chemical synthesis.\n      &quot;],
+        &quot;title_display&quot;:&quot;DNA Display I. Sequence-Encoded Routing of DNA Populations&quot;,
+        &quot;score&quot;:6.319604},
+      {
+        &quot;id&quot;:&quot;10.1371/journal.pgen.0030110&quot;,
+        &quot;journal&quot;:&quot;PLoS Genetics&quot;,
+        &quot;eissn&quot;:&quot;1553-7404&quot;,
+        &quot;publication_date&quot;:&quot;2007-07-06T00:00:00Z&quot;,
+        &quot;article_type&quot;:&quot;Research Article&quot;,
+        &quot;author_display&quot;:[&quot;Concetta Cuozzo&quot;,
+          &quot;Antonio Porcellini&quot;,
+          &quot;Tiziana Angrisano&quot;,
+          &quot;Annalisa Morano&quot;,
+          &quot;Bongyong Lee&quot;,
+          &quot;Alba Di Pardo&quot;,
+          &quot;Samantha Messina&quot;,
+          &quot;Rodolfo Iuliano&quot;,
+          &quot;Alfredo Fusco&quot;,
+          &quot;Maria R Santillo&quot;,
+          &quot;Mark T Muller&quot;,
+          &quot;Lorenzo Chiariotti&quot;,
+          &quot;Max E Gottesman&quot;,
+          &quot;Enrico V Avvedimento&quot;],
+        &quot;abstract&quot;:[&quot;To explore the link between DNA damage and gene silencing, we induced a DNA double-strand break in the genome of Hela or mouse embryonic stem (ES) cells using I-SceI restriction endonuclease. The I-SceI site lies within one copy of two inactivated tandem repeated green fluorescent protein (GFP) genes (DR-GFP). A total of 2%–4% of the cells generated a functional GFP by homology-directed repair (HR) and gene conversion. However, ~50% of these recombinants expressed GFP poorly. Silencing was rapid and associated with HR and DNA methylation of the recombinant gene, since it was prevented in Hela cells by 5-aza-2′-deoxycytidine. ES cells deficient in DNA methyl transferase 1 yielded as many recombinants as wild-type cells, but most of these recombinants expressed GFP robustly. Half of the HR DNA molecules were de novo methylated, principally downstream to the double-strand break, and half were undermethylated relative to the uncut DNA. Methylation of the repaired gene was independent of the methylation status of the converting template. The methylation pattern of recombinant molecules derived from pools of cells carrying DR-GFP at different loci, or from an individual clone carrying DR-GFP at a single locus, was comparable. ClustalW analysis of the sequenced GFP molecules in Hela and ES cells distinguished recombinant and nonrecombinant DNA solely on the basis of their methylation profile and indicated that HR superimposed novel methylation profiles on top of the old patterns. Chromatin immunoprecipitation and RNA analysis revealed that DNA methyl transferase 1 was bound specifically to HR GFP DNA and that methylation of the repaired segment contributed to the silencing of GFP expression. Taken together, our data support a mechanistic link between HR and DNA methylation and suggest that DNA methylation in eukaryotes marks homologous recombined segments.: Genomic DNA can be modified by cytosine methylation. This epigenetic modification is layered on the primary genetic information and can silence the affected gene. Epigenetic modification has been implicated in cancer and aging. To date, the primary cause and the mechanism leading to DNA methylation are not known. By using a sophisticated genetic system, we have induced a single break in the double helix of the genomes of mouse or human cells. This rupture was repaired by a very precise mechanism: the damaged chromosome pairs and retrieves genetic information from an undamaged and homologous DNA partner. This homology-directed repair was marked in half of the repaired molecules by de novo methylation of cytosines flanking the cut. As a direct consequence, the gene in these repaired molecules was silenced. In the remaining molecules, the recombinant DNA was undermethylated and expressed the reconstituted gene. Since homology-directed repair may duplicate or delete genetic information, epigenetic modification of repaired DNA represents a powerful evolutionary force. If the expression of the repaired gene is harmful, only cells inheriting the silenced copy will survive. Conversely, if the function of the repaired gene is beneficial, cells inheriting the under-methylated copy will have a selective advantage. &quot;],
+        &quot;title_display&quot;:&quot;DNA Damage, Homology-Directed Repair, and DNA Methylation&quot;,
+        &quot;score&quot;:6.319604},
+      {
+        &quot;id&quot;:&quot;10.1371/annotation/254cef67-ab0e-43f6-af62-8f7df7c3677c&quot;,
+        &quot;journal&quot;:&quot;PLoS ONE&quot;,
+        &quot;eissn&quot;:&quot;1932-6203&quot;,
+        &quot;publication_date&quot;:&quot;2013-05-15T00:00:00Z&quot;,
+        &quot;article_type&quot;:&quot;Correction&quot;,
+        &quot;author_display&quot;:[&quot;Sheng-Yu Wang&quot;,
+          &quot;Alan Yueh-Luen Lee&quot;,
+          &quot;Yi-Hua Lai&quot;,
+          &quot;Jeremy J. W. Chen&quot;,
+          &quot;Wen-Lin Wu&quot;,
+          &quot;Jeu-Ming P. Yuann&quot;,
+          &quot;Wang-Lin Su&quot;,
+          &quot;Show-Mei Chuang&quot;,
+          &quot;Ming-Hon Hou&quot;],
+        &quot;abstract&quot;:[&quot;&quot;],
+        &quot;title_display&quot;:&quot;Correction: Spermine Attenuates the Action of the DNA Intercalator, Actinomycin D, on DNA Binding and the Inhibition of Transcription and DNA Replication&quot;,
+        &quot;score&quot;:6.258181},
+      {
+        &quot;id&quot;:&quot;10.1371/journal.pgen.1000047&quot;,
+        &quot;journal&quot;:&quot;PLoS Genetics&quot;,
+        &quot;eissn&quot;:&quot;1553-7404&quot;,
+        &quot;publication_date&quot;:&quot;2008-04-25T00:00:00Z&quot;,
+        &quot;article_type&quot;:&quot;Research Article&quot;,
+        &quot;author_display&quot;:[&quot;Heidi M. Blank&quot;,
+          &quot;Chonghua Li&quot;,
+          &quot;John E. Mueller&quot;,
+          &quot;Lydia M. Bogomolnaya&quot;,
+          &quot;Mary Bryk&quot;,
+          &quot;Michael Polymenis&quot;],
+        &quot;abstract&quot;:[&quot;Coordination between cellular metabolism and DNA replication determines when cells initiate division. It has been assumed that metabolism only plays a permissive role in cell division. While blocking metabolism arrests cell division, it is not known whether an up-regulation of metabolic reactions accelerates cell cycle transitions. Here, we show that increasing the amount of mitochondrial DNA accelerates overall cell proliferation and promotes nuclear DNA replication, in a nutrient-dependent manner. The Sir2p NAD+-dependent de-acetylase antagonizes this mitochondrial role. We found that cells with increased mitochondrial DNA have reduced Sir2p levels bound at origins of DNA replication in the nucleus, accompanied with increased levels of K9, K14-acetylated histone H3 at those origins. Our results demonstrate an active role of mitochondrial processes in the control of cell division. They also suggest that cellular metabolism may impact on chromatin modifications to regulate the activity of origins of DNA replication.Author Summary: How cells determine when to divide is critical for understanding biological processes where cell proliferation is manifest. Because cells need to accumulate precursors prior to duplication, cellular metabolism is expected to impact cell division. Mitochondrial processes are central to the control of overall cell metabolism. Yet, the mechanisms that link mitochondrial processes with nuclear DNA replication remain largely unknown. We found that budding yeast cells moderately over-expressing Abf2p, a mtDNA maintenance protein, accelerate nuclear DNA replication. These cells with more mitochondrial DNA proliferate and increase in size more rapidly than their wild type counterparts. The results suggest that cells over-expressing Abf2p have up-regulated metabolic functions, which in turn enable these cells to accelerate initiation of cell division. We also examined the role of Sir2p, an NAD+-dependent de-acetylase, which negatively controls DNA replication. We found that the level of Sir2p bound at origins of DNA replication is inversely related to the amount of mtDNA in the cell. In summary, our findings challenge the notion that metabolic processes are required for cell division by simply operating at constitutive background levels. Instead, our work suggests that mitochondrial transactions can actively promote DNA replication and cell division. &quot;],
+        &quot;title_display&quot;:&quot;An Increase in Mitochondrial DNA Promotes Nuclear DNA Replication in Yeast&quot;,
+        &quot;score&quot;:6.1532307},
+      {
+        &quot;id&quot;:&quot;10.1371/journal.pone.0036125&quot;,
+        &quot;journal&quot;:&quot;PLoS ONE&quot;,
+        &quot;eissn&quot;:&quot;1932-6203&quot;,
+        &quot;publication_date&quot;:&quot;2012-05-01T00:00:00Z&quot;,
+        &quot;article_type&quot;:&quot;Research Article&quot;,
+        &quot;author_display&quot;:[&quot;Sabine Hagemann&quot;,
+          &quot;Dirk Kuck&quot;,
+          &quot;Carlo Stresemann&quot;,
+          &quot;Florian Prinz&quot;,
+          &quot;Bodo Brueckner&quot;,
+          &quot;Cora Mund&quot;,
+          &quot;Dominik Mumberg&quot;,
+          &quot;Anette Sommer&quot;],
+        &quot;abstract&quot;:[&quot;\n        Silencing of genes by hypermethylation contributes to cancer progression and has been shown to occur with increased frequency at specific genomic loci. However, the precise mechanisms underlying the establishment and maintenance of aberrant methylation marks are still elusive. The de novo DNA methyltransferase 3B (DNMT3B) has been suggested to play an important role in the generation of cancer-specific methylation patterns. Previous studies have shown that a reduction of DNMT3B protein levels induces antiproliferative effects in cancer cells that were attributed to the demethylation and reactivation of tumor suppressor genes. However, methylation changes have not been analyzed in detail yet. Using RNA interference we reduced DNMT3B protein levels in colon cancer cell lines. Our results confirm that depletion of DNMT3B specifically reduced the proliferation rate of DNMT3B-overexpressing colon cancer cell lines. However, genome-scale DNA methylation profiling failed to reveal methylation changes at putative DNMT3B target genes, even in the complete absence of DNMT3B. These results show that DNMT3B is dispensable for the maintenance of aberrant DNA methylation patterns in human colon cancer cells and they have important implications for the development of targeted DNA methyltransferase inhibitors as epigenetic cancer drugs.\n      &quot;],
+        &quot;title_display&quot;:&quot;Antiproliferative Effects of DNA Methyltransferase 3B Depletion Are Not Associated with DNA Demethylation&quot;,
+        &quot;score&quot;:6.1532307},
+      {
+        &quot;id&quot;:&quot;10.1371/journal.pone.0034131&quot;,
+        &quot;journal&quot;:&quot;PLoS ONE&quot;,
+        &quot;eissn&quot;:&quot;1932-6203&quot;,
+        &quot;publication_date&quot;:&quot;2012-03-30T00:00:00Z&quot;,
+        &quot;article_type&quot;:&quot;Research Article&quot;,
+        &quot;author_display&quot;:[&quot;Susanna Sawyer&quot;,
+          &quot;Johannes Krause&quot;,
+          &quot;Katerina Guschanski&quot;,
+          &quot;Vincent Savolainen&quot;,
+          &quot;Svante Pääbo&quot;],
+        &quot;abstract&quot;:[&quot;\n        DNA that survives in museum specimens, bones and other tissues recovered by archaeologists is invariably fragmented and chemically modified. The extent to which such modifications accumulate over time is largely unknown but could potentially be used to differentiate between endogenous old DNA and present-day DNA contaminating specimens and experiments. Here we examine mitochondrial DNA sequences from tissue remains that vary in age between 18 and 60,000 years with respect to three molecular features: fragment length, base composition at strand breaks, and apparent C to T substitutions. We find that fragment length does not decrease consistently over time and that strand breaks occur preferentially before purine residues by what may be at least two different molecular mechanisms that are not yet understood. In contrast, the frequency of apparent C to T substitutions towards the 5′-ends of molecules tends to increase over time. These nucleotide misincorporations are thus a useful tool to distinguish recent from ancient DNA sources in specimens that have not been subjected to unusual or harsh treatments.\n      &quot;],
+        &quot;title_display&quot;:&quot;Temporal Patterns of Nucleotide Misincorporations and DNA Fragmentation in Ancient DNA&quot;,
+        &quot;score&quot;:6.1532307}]
+  }}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>response.data == &#39;#[]&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">102</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

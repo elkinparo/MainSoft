@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.milescarrental.runners.RentCarRunner" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-04-11T03:36:06" hostname="DESKTOP-P14Q3PI" time="119.41">
+  <properties/>
+  <testcase name="rent a car in the florida city #1" classname="com.milescarrental.runners.RentCarRunner" time="75.728"/>
+  <testcase name="rent a car in the florida city #2" classname="com.milescarrental.runners.RentCarRunner" time="43.681"/>
+  <system-out><![CDATA[?[92m|-- Given actor enters the page?[0m
+?[92m|---- Elkin opens the browser at https://milescarrental.com/es/?[0m
+?[92m|-- When to send information for the "cheap" car?[0m
+?[92m|---- Elkin rentcar?[0m
+?[92m|------ Elkin clicks on SEARCH_AIRPORT?[0m
+?[92m|------ Elkin enters 'Aeropuerto de Florida Keys Marathon' into AIRPORT?[0m
+?[92m|------ Elkin clicks on SELECT_AIRPORT?[0m
+?[92m|------ Elkin clicks on FIRST_MONTH?[0m
+?[92m|------ Elkin clicks on NEXT_MONTH?[0m
+?[92m|------ Elkin clicks on TODAY_NEXT_MONTH?[0m
+?[92m|------ Elkin clicks on TODAY_NEXT_WEEK?[0m
+?[92m|------ Elkin clicks on SEARCH?[0m
+?[92m|------ Elkin clicks on SELECT_CAR?[0m
+?[92m|------ Elkin enters 'Franklyn Daniel DVM' into NAME?[0m
+?[92m|------ Elkin enters '6396177549' into PHONE?[0m
+?[92m|------ Elkin enters 'fmkagzq@gmail.com' into EMAIL?[0m
+?[92m|------ Elkin clicks on NEXT?[0m
+?[92m|-- Then I see the make of the car "Kia Soul"?[0m
+?[92m|---- Then final message should be 'Kia Soul'?[0m
+?[92m|-- Given actor enters the page?[0m
+?[92m|---- Elkin opens the browser at https://milescarrental.com/es/?[0m
+?[92m|-- When to send information for the "expensive" car?[0m
+?[92m|---- Elkin rentcar?[0m
+?[92m|------ Elkin clicks on SEARCH_AIRPORT?[0m
+?[92m|------ Elkin enters 'Aeropuerto de Florida Keys Marathon' into AIRPORT?[0m
+?[92m|------ Elkin clicks on SELECT_AIRPORT?[0m
+?[92m|------ Elkin clicks on FIRST_MONTH?[0m
+?[92m|------ Elkin clicks on NEXT_MONTH?[0m
+?[92m|------ Elkin clicks on TODAY_NEXT_MONTH?[0m
+?[92m|------ Elkin clicks on TODAY_NEXT_WEEK?[0m
+?[92m|------ Elkin clicks on SEARCH?[0m
+?[92m|------ Elkin clicks on SELECT_CAR?[0m
+?[92m|------ Elkin enters 'Torrie Lueilwitz' into NAME?[0m
+?[92m|------ Elkin enters '5144424556' into PHONE?[0m
+?[92m|------ Elkin enters 'hyxorml@gmail.com' into EMAIL?[0m
+?[92m|------ Elkin clicks on NEXT?[0m
+?[92m|------ Elkin clicks on UPGRADE?[0m
+?[92m|-- Then I see the make of the car "Toyota Corolla"?[0m
+?[92m|---- Then final message should be 'Toyota Corolla'?[0m
+]]></system-out>
+  <system-err><![CDATA[[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/elkin/OneDrive/Escritorio/MainSoft%20Ltda/v2/src/test/resources/features/rentcar.feature
+[Test worker] INFO  - ?[96m
+
+-------------------------------------------------------------------------------------
+     _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
+    /       ||   ____||   _  \     |   ____||  \ |  | |  | |           |\   \  /   / 
+   |   (----`|  |__   |  |_)  |    |  |__   |   \|  | |  | `---|  |----` \   \/   /  
+    \   \    |   __|  |      /     |   __|  |  . `  | |  |     |  |       \_    _/   
+.----)   |   |  |____ |  |\  \----.|  |____ |  |\   | |  |     |  |         |  |     
+|_______/    |_______|| _| `._____||_______||__| \__| |__|     |__|         |__|    
+                                                                                     
+ News and tutorials at http://www.serenity-bdd.info                                  
+ Documentation at https://wakaleo.gitbooks.io/the-serenity-book/content/             
+ Join the Serenity Community on Gitter: https://gitter.im/serenity-bdd/serenity-core 
+ Serenity BDD Support and Training at http://serenity-bdd.info/#/trainingandsupport  
+-------------------------------------------------------------------------------------
+?[0m
+[Test worker] INFO  - Test Suite Started: as a quality analyst
+[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/elkin/OneDrive/Escritorio/MainSoft%20Ltda/v2/src/test/resources/features/rentcar.feature
+[Test worker] INFO  - Test Suite Started: as a quality analyst
+[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/elkin/OneDrive/Escritorio/MainSoft%20Ltda/v2/src/test/resources/features/rentcar.feature
+[Test worker] INFO  - ----------------
+- TEST STARTED -
+----------------
+
+rent a car in the florida city(as-a-quality-analyst;rent-a-car-in-the-florida-city)
+----------------
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Using automatically driver download
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 111.0.5563.64 (resolved driver for Chrome 111)
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\elkin\.cache\selenium\chromedriver\win32\111.0.5563.64\chromedriver.exe
+Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 59848
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+abr 10, 2023 10:36:13 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+abr 10, 2023 10:36:13 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find an exact match for CDP version 111, so returning the closest version found: a no-op implementation
+abr 10, 2023 10:36:13 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFORMACIÓN: Unable to find CDP implementation matching 111.
+abr 10, 2023 10:36:13 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+ADVERTENCIA: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.1.4` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO  - ?[92m---------------
+- TEST PASSED -
+---------------
+
+rent a car in the florida city
+---------------?[0m
+[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/elkin/OneDrive/Escritorio/MainSoft%20Ltda/v2/src/test/resources/features/rentcar.feature
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Using automatically driver download
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 111.0.5563.64 (resolved driver for Chrome 111)
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\elkin\.cache\selenium\chromedriver\win32\111.0.5563.64\chromedriver.exe
+Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 52400
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+abr 10, 2023 10:37:24 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+abr 10, 2023 10:37:24 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find an exact match for CDP version 111, so returning the closest version found: a no-op implementation
+abr 10, 2023 10:37:24 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFORMACIÓN: Unable to find CDP implementation matching 111.
+abr 10, 2023 10:37:24 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+ADVERTENCIA: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.1.4` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO  - ?[92m---------------
+- TEST PASSED -
+---------------
+
+rent a car in the florida city
+---------------?[0m
+[pool-2-thread-1] INFO serenity.reporting - 
+---------------------------------------------
+| TEST NAME:   ?[1mrent a car in the florida city?[0m
+| RESULT:      ?[92mPassing?[0m
+| REQUIREMENT: as a quality analyst
+| REPORT:      ?[96mfile:///C:/Users/elkin/OneDrive/Escritorio/MainSoft%20Ltda/v2/target/site/serenity/fc13566d15eae75ac080eda133f8d9ef1ec83b6e4d795ffeeba1712b8b0e9def.html?[0m
+---------------------------------------------
+?[32m?[1m??????????????????????????????????????????????????????????????????????????????????????[0m
+?[32m?[1m??[0m Share your Cucumber Report with your team at ?[36m?[1m?[4mhttps://reports.cucumber.io?[0m          ?[32m?[1m??[0m
+?[32m?[1m??[0m Activate publishing with one of the following:                                    ?[32m?[1m??[0m
+?[32m?[1m??[0m                                                                                   ?[32m?[1m??[0m
+?[32m?[1m??[0m src/test/resources/cucumber.properties:          ?[36mcucumber.publish.enabled?[0m=?[36mtrue?[0m    ?[32m?[1m??[0m
+?[32m?[1m??[0m src/test/resources/junit-platform.properties:    ?[36mcucumber.publish.enabled?[0m=?[36mtrue?[0m    ?[32m?[1m??[0m
+?[32m?[1m??[0m Environment variable:                            ?[36mCUCUMBER_PUBLISH_ENABLED?[0m=?[36mtrue?[0m    ?[32m?[1m??[0m
+?[32m?[1m??[0m JUnit:                                           ?[36m@CucumberOptions?[0m(publish = ?[36mtrue?[0m) ?[32m?[1m??[0m
+?[32m?[1m??[0m                                                                                   ?[32m?[1m??[0m
+?[32m?[1m??[0m More information at ?[36mhttps://cucumber.io/docs/cucumber/environment-variables/?[0m      ?[32m?[1m??[0m
+?[32m?[1m??[0m                                                                                   ?[32m?[1m??[0m
+?[32m?[1m??[0m Disable this message with one of the following:                                   ?[32m?[1m??[0m
+?[32m?[1m??[0m                                                                                   ?[32m?[1m??[0m
+?[32m?[1m??[0m src/test/resources/cucumber.properties:          ?[36mcucumber.publish.quiet?[0m=?[36mtrue?[0m      ?[32m?[1m??[0m
+?[32m?[1m??[0m src/test/resources/junit-platform.properties:    ?[36mcucumber.publish.quiet?[0m=?[36mtrue?[0m      ?[32m?[1m??[0m
+?[32m?[1m??????????????????????????????????????????????????????????????????????????????????????[0m
+]]></system-err>
+</testsuite>
